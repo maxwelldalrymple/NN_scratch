@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 data = pd.read_csv('train.csv') # Read training data using pandas
 
-data = np.array(data) # convert data to a numpy arrra
+data = np.array(data) # convert data to a numpy array
 m, n = data.shape # save the shape of the array
 np.random.shuffle(data) # shuffle before splitting into dev and training sets
 
@@ -32,7 +32,7 @@ def forward_prop(W1, b1, W2, b2, X): # Forward propagation function
     return Z1, A1, Z2, A2
 
 
-def ReLU(Z): # Relu activation function, retun x = x unless x < 0
+def ReLU(Z): # Relu activation function, return x = x unless x < 0
     return np.maximum(Z, 0) # create matix of max values
 
 def ReLU_deriv(Z): 
@@ -60,7 +60,7 @@ def backward_prop(Z1, A1, Z2, A2, W1, W2, X, Y): # Calculate the loss
     return dW1, db1, dW2, db2
 
 
-def update_params(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha): # updare weights and biases
+def update_params(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha): # update weights and biases
     W1 = W1 - alpha * dW1
     b1 = b1 - alpha * db1
     W2 = W2 - alpha * dW2
@@ -71,7 +71,7 @@ def update_params(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha): # updare weights a
 def get_predictions(A2): # determine neural networks prediction
     return np.argmax(A2, 0)
 
-def get_accuracy(predictions, Y): # determine accuray of generation
+def get_accuracy(predictions, Y): # determine accuracy of generation
     print(predictions, Y)
     return np.sum(predictions == Y) / Y.size
 

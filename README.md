@@ -24,13 +24,13 @@ The weights and biases are the parameters that the neural network learns during 
 
 We initialize the weights randomly and the biases to zero. The number of weights and biases depends on the number of neurons in the previous and current layers.
 
-## 2. Implement the Forwardpropagation Function
+## 2. Implement the Forward-propagation Function
 The feedforward function takes the input and processes it through the layers to produce an output. We multiply the input by the weights, add the bias, and apply the activation function to get the output.
 
 ## 3. Implement the Activation Function
 The activation function is applied to the output of a neuron to introduce non-linearity into the neural network. The most commonly used activation function is the sigmoid function, which maps the output to a value between 0 and 1.
 
-## 4. Implement the Backpropagation Function
+## 4. Implement the Back-propagation Function
 Backpropagation is the process of adjusting the weights and biases of the neural network to minimize the error between the predicted output and the actual output. We calculate the error by comparing the predicted output with the actual output and propagate it back through the network to adjust the weights and biases.
 
 ## 5. Train the Neural Network

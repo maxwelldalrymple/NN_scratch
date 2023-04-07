@@ -24,7 +24,7 @@ The weights and biases are the parameters that the neural network learns during 
 
 We initialize the weights randomly and the biases to zero. The number of weights and biases depends on the number of neurons in the previous and current layers.
 
-## 2. Implement the Feedforward Function
+## 2. Implement the Forwardpropagation Function
 The feedforward function takes the input and processes it through the layers to produce an output. We multiply the input by the weights, add the bias, and apply the activation function to get the output.
 
 ## 3. Implement the Activation Function
